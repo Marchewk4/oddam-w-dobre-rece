@@ -1,4 +1,4 @@
-import "../../scss/main.scss"
+
 
 import HomeNav from "./HomeNav.jsx";
 import HomeAbout from "./HomeAbout.jsx";
@@ -9,12 +9,15 @@ import HomeFourSteps from "./HomeFourSteps.jsx";
 import HomeContact from "./HomeContact.jsx";
 import HomeFooter from "./HomeFooter.jsx";
 
+import "../../scss/main.scss"
+
+
 function Home() {
 
     return (
         <>
-            <HomeNav />
             <HomeHeader />
+            <HomeNav />
             <HomeThreeColumns />
             <HomeFourSteps />
             <HomeAbout />

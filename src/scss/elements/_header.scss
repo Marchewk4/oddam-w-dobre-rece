@@ -1,0 +1,17 @@
+@import "src/scss/settings/index";
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 40px;
+
+  .header-link {
+    color: $secondary-font-color;
+    padding: 5px;
+    margin: 5px;
+
+    &:hover {
+      border: 1px solid $gold-color;
+    }
+  }
+}

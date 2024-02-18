@@ -1,0 +1,12 @@
+@import "colors";
+@import "fonts";
+@import "reset";
+
+body {
+  font-family: $base-font;
+  color: $primary-font-color;
+}
+
+.container {
+  margin-right: 140px;
+}
