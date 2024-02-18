@@ -1,18 +1,19 @@
 @import "src/scss/settings/index";
 
-header {
+nav {
   display: flex;
   justify-content: flex-end;
-  margin-top: 40px;
-  font-size: 14px;
+  margin-top: 20px;
+  font-size: 18px;
 
-  .header-link {
-    color: $secondary-font-color;
-    padding: 5px;
+  a {
+    padding: 5px 10px;
     margin: 5px;
     border: 1px solid transparent;
 
     &:hover {
+      cursor: pointer;
+      color: $secondary-font-color;
       border: 1px solid $gold-color;
     }
   }

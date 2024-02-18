@@ -3,7 +3,7 @@ import "../../scss/main.scss"
 function HomeAbout() {
 
     return (
-        <div>Home About</div>
+        <div className="about" name="about">Home About</div>
     );
 }
 

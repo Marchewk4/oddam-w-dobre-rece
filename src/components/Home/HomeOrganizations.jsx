@@ -3,7 +3,7 @@ import "../../scss/main.scss"
 function HomeOrganizations() {
 
     return (
-        <div>Home Organizations</div>
+        <div className="organizations" name="organizations">Home Organizations</div>
     );
 }
 

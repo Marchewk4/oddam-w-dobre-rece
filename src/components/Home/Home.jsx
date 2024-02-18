@@ -15,7 +15,7 @@ import "../../scss/main.scss"
 function Home() {
 
     return (
-        <>
+        <div className="home" name="home">
             <HomeHeader />
             <HomeNav />
             <HomeThreeColumns />
@@ -24,7 +24,7 @@ function Home() {
             <HomeOrganizations />
             <HomeContact />
             <HomeFooter />
-        </>
+        </div>
     );
 }
 
