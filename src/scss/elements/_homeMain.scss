@@ -1,0 +1,61 @@
+@import "src/scss/settings/index";
+
+.home-start {
+  display: flex;
+
+  .left-side {
+    position: relative;
+    width: 40%;
+
+    .home-image {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 120%;
+      object-fit: cover;
+    }
+  }
+
+  .right-side {
+    //display: flex;
+    //justify-content: flex-end;
+    width: 60%;
+    height: inherit;
+  }
+}
+
+.main-section {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    margin: 5px;
+    font-size: 22px;
+    font-weight: normal;
+  }
+
+  .main-buttons {
+    display: flex;
+    margin-bottom: 200px;
+
+    .main-button {
+      color: $primary-font-color;
+      text-align: center;
+      font-size: 22px;
+      padding: 5px;
+      border: 1px solid $primary-font-color;
+      width: 150px;
+      margin: 10px;
+
+      &:hover {
+        cursor: pointer;
+        color: $secondary-font-color;
+        border: 1px solid $gold-color;
+      }
+    }
+  }
+}

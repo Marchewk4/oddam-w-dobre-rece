@@ -6,7 +6,7 @@ import "../../scss/main.scss"
 function HomeHeader() {
 
     return (
-        <header className="container">
+        <header className="header">
             <Link className='login header-link' to="/login">Zaloguj</Link>
             <Link className='register header-link' to="/register">Załóż konto</Link>
         </header>

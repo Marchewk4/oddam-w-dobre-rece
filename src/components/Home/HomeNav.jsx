@@ -5,7 +5,7 @@ import "../../scss/main.scss"
 function HomeNav() {
 
     return (
-        <nav className="container">
+        <nav className="nav">
             <Link
                 activeClass='active'
                 to="homeStart"
