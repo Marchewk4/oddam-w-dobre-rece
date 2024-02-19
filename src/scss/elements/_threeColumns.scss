@@ -1,0 +1,28 @@
+@import "src/scss/settings/index";
+
+.cols {
+  background-color: $gold-color;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 30px;
+
+  .col {
+    width: 28%;
+    text-align: center;
+    padding: 10px 0;
+
+    h1 {
+      font-size: 80px;
+      font-weight: 300;
+      margin: 0;
+    }
+
+    span {
+      text-transform: uppercase;
+    }
+
+    p {
+      margin-top: 10px;
+    }
+  }
+}
