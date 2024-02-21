@@ -4,7 +4,8 @@
   background-color: $gold-color;
   display: flex;
   justify-content: space-around;
-  padding: 0 30px;
+  padding: 30px 30px 60px 30px;
+
 
   .col {
     width: 28%;
@@ -19,10 +20,12 @@
 
     span {
       text-transform: uppercase;
+      font-weight: 600;
     }
 
     p {
       margin-top: 10px;
+      font-weight: 300;
     }
   }
 }
