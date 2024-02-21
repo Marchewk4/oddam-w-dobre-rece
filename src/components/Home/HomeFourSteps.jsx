@@ -12,7 +12,7 @@ import "../../scss/main.scss"
 function HomeFourSteps() {
 
     return (
-        <section className="four-steps">
+        <section className="four-steps" name="fourSteps">
             <div className="four-steps__title">
                 <h2>Wystarczą 4 proste kroki</h2>
                 <img src={Decoration} alt="decoration" />
