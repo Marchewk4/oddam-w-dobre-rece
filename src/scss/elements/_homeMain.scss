@@ -29,6 +29,7 @@
 
 .main-section {
   margin-top: 120px;
+  margin-bottom: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -39,25 +40,25 @@
     font-size: 22px;
     font-weight: normal;
   }
+}
 
-  .main-buttons {
-    display: flex;
-    margin-bottom: 200px;
+.main-buttons {
+  display: flex;
+  justify-content: center;
 
-    .main-button {
-      color: $primary-font-color;
-      text-align: center;
-      font-size: 22px;
-      padding: 5px;
-      border: 1px solid $primary-font-color;
-      width: 200px;
-      margin: 10px;
+  .main-button {
+    color: $primary-font-color;
+    text-align: center;
+    font-size: 22px;
+    padding: 5px;
+    border: 1px solid $primary-font-color;
+    width: 200px;
+    margin: 10px;
 
-      &:hover {
-        cursor: pointer;
-        color: $secondary-font-color;
-        border: 1px solid $gold-color;
-      }
+    &:hover {
+      cursor: pointer;
+      color: $secondary-font-color;
+      border: 1px solid $gold-color;
     }
   }
 }

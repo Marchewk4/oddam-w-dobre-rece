@@ -1,0 +1,48 @@
+@import "src/scss/settings/index";
+
+.four-steps {
+  margin-top: 55px;
+  margin-bottom: 80px;
+
+  .four-steps__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      margin: 5px;
+      font-weight: lighter;
+    }
+  }
+
+  .four-steps__steps {
+    width: 100%;
+    padding: 20px;
+    background-color: $gray-color;
+    display: flex;
+    justify-content: center;
+
+
+    .step {
+      height: 200px;
+      width: 180px;
+      margin: 0 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        padding-bottom: 5px;
+      }
+
+      hr {
+        margin: 5px 0;
+        width: 50%;
+        border-top: 1px solid $primary-font-color;
+      }
+      span {
+        text-align: center;
+      }
+    }
+  }
+}
