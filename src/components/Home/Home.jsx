@@ -1,5 +1,3 @@
-
-
 import HomeNav from "./HomeNav.jsx";
 import HomeAbout from "./HomeAbout.jsx";
 import HomeHeader from "./HomeHeader.jsx";
@@ -9,7 +7,7 @@ import HomeThreeColumns from "./HomeThreeColumns.jsx";
 import HomeFourSteps from "./HomeFourSteps.jsx";
 import HomeContact from "./HomeContact.jsx";
 import HomeFooter from "./HomeFooter.jsx";
-import HomeImage from "../../assets/Home-Hero-Image.jpg"; // Import the image
+import HomeImage from "../../assets/Home-Hero-Image.jpg";
 
 import "../../scss/main.scss"
 
@@ -23,7 +21,7 @@ function Home() {
                     <img src={HomeImage} alt="home-image" className="home-image"/>
 
                 </div>
-                <div className="right-sde container">
+                <div className="right-side container">
                     <div className="header-nav-container">
                         <HomeHeader />
                         <HomeNav />
