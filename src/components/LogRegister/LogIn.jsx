@@ -68,12 +68,12 @@ function LogIn() {
                 <form onSubmit={handleSubmit}>
                     <div className='form-fields'>
                         <div className='single-field'>
-                            <label htmlFor="email">Email</label>
+                            <label>Email</label>
                             <input type="text" value={email} name='email' onChange={(e) => setEmail(e.target.value)} />
                             {errors.email && <p className="error-message">{errors.email}</p>}
                         </div>
                         <div className='single-field'>
-                            <label htmlFor="password">Hasło</label>
+                            <label>Hasło</label>
                             <input type="password" value={password} name='password' onChange={(e) => setPassword(e.target.value)} />
                             {errors.password && <p className="error-message">{errors.password}</p>}
                         </div>

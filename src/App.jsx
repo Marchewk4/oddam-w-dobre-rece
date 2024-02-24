@@ -18,7 +18,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/logowanie" element={<LogIn />} />
-                <Route path="/register" element={<Register />} />
+                <Route path="/rejestracja" element={<Register />} />
                 <Route path="/wylogowano" element={<LogOut />} />
             </Routes>
        </HashRouter>
