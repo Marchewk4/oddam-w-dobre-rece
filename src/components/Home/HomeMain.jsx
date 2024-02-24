@@ -11,8 +11,8 @@ function HomeMain() {
             <h2>Oddaj niechciane rzeczy w zaufane ręce</h2>
             <img src={Decoration} alt="decoration" />
             <div className='main-buttons'>
-                <Link className='main-button' to="/login">ODDAJ<br/>RZECZY</Link>
-                <Link className='main-button' to="/login">ZORGANIZUJ<br/>ZBIÓRKĘ</Link>
+                <Link className='main-button' to="/logowanie">ODDAJ<br/>RZECZY</Link>
+                <Link className='main-button' to="/logowanie">ZORGANIZUJ<br/>ZBIÓRKĘ</Link>
             </div>
         </section>
     );

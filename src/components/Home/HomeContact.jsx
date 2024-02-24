@@ -78,7 +78,7 @@ function HomeContact() {
                     <div className="success-message">Wiadomość została wysłana! <br/> Wkrótce się skontaktujemy!</div>
                 )}
                 <div className="contact-form__first">
-                    <div className="singleField">
+                    <div className="single-field">
                         <label>Wpisz swoje imię</label>
                         <input
                             type="text"
@@ -89,7 +89,7 @@ function HomeContact() {
                         />
                         {errors.name && <p className="error-message">{errors.name}</p>}
                     </div>
-                    <div className="singleField">
+                    <div className="single-field">
                         <label>Wpisz swój email</label>
                         <input
                             type="text"

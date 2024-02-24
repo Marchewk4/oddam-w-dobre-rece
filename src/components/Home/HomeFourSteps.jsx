@@ -46,7 +46,7 @@ function HomeFourSteps() {
             </div>
 
             <div className='main-buttons'>
-                <Link className='main-button' to='/login'>ODDAJ<br/>RZECZY</Link>
+                <Link className='main-button' to='/logowanie'>ODDAJ<br/>RZECZY</Link>
             </div>
         </section>
     );
