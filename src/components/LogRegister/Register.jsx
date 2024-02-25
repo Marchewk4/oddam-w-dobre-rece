@@ -1,7 +1,7 @@
-import { useState } from "react";
 import { Link } from 'react-router-dom';
 import { addDoc, collection } from "firebase/firestore";
 import { firestore } from "../firebase.js";
+import { useNavigate } from 'react-router-dom';
 
 import HomeHeader from "../Home/HomeHeader.jsx";
 import HomeNav from "../Home/HomeNav.jsx";
@@ -10,11 +10,13 @@ import Decoration from "../../assets/Decoration.svg";
 import "../../scss/main.scss";
 
 function Register() {
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
-    const [password2, setPassword2] = useState("");
-    const [errors, setErrors] = useState({});
-    const [register, setRegister] = useState(false);
+    const [email, setEmail] = React.useState("");
+    const [password, setPassword] = React.useState("");
+    const [password2, setPassword2] = React.useState("");
+    const [errors, setErrors] = React.useState({});
+    const [register, setRegister] = React.useState(false);
+
+    const navigate = useNavigate();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -52,6 +54,10 @@ function Register() {
 
             setRegister(true);
 
+            navigate("/oddaj-rzeczy");
+
+            localStorage.setItem('loggedInUser', JSON.stringify({ email }));
+
             setEmail("");
             setPassword("");
             setPassword2("");
@@ -86,7 +92,7 @@ function Register() {
                         <div className='single-field'>
                             <label>Powtórz hasło</label>
                             <input type="password" value={password2} onChange={(e) => setPassword2(e.target.value)} />
-                            {errors.password2 && <p className="error-message">{errors.password2}</p>} {/* Changed property name */}
+                            {errors.password2 && <p className="error-message">{errors.password2}</p>}
                         </div>
                     </div>
                     <div className='form-buttons'>

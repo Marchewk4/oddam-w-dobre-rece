@@ -85,7 +85,7 @@ function LogIn() {
                         </div>
                     </div>
                     <div className='form-buttons'>
-                        <Link to="/register">Załóż konto</Link>
+                        <Link to="/rejestracja">Załóż konto</Link>
                         <button type="submit">Zaloguj się</button>
                     </div>
                 </form>
