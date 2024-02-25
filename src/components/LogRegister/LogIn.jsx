@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { addDoc, collection } from "firebase/firestore";
 import { firestore } from "../firebase.js";
 
@@ -14,6 +14,8 @@ function LogIn() {
     const [password, setPassword] = useState("");
     const [errors, setErrors] = useState({});
     const [logIn, setLogIn] = useState(false);
+
+    const navigate = useNavigate();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -49,6 +51,10 @@ function LogIn() {
 
             setEmail("");
             setPassword("");
+
+            localStorage.setItem('loggedInUser', JSON.stringify({ email }));
+
+            navigate("/oddaj-rzeczy");
         } catch (error) {
             console.error("Error adding LogIn: ", error);
 
