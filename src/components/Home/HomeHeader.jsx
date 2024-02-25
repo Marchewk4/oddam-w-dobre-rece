@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-import "../../scss/main.scss"
+import "../../scss/main.scss";
 
 
 function HomeHeader() {
