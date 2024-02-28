@@ -4,6 +4,7 @@ import FormMain from "./FormMain.jsx";
 import FormImportant from "./FormImportant.jsx";
 import HomeContact from "../Home/HomeContact.jsx";
 import HomeFooter from "../Home/HomeFooter.jsx";
+import FormSteps from "./FormSteps.jsx";
 import FormImage from "../../assets/Form-Hero-Image.jpg";
 import "../../scss/main.scss"
 
@@ -24,6 +25,7 @@ function Form() {
                 </div>
             </div>
             <FormImportant />
+            <FormSteps />
             <HomeContact />
             <HomeFooter />
         </>
