@@ -4,6 +4,21 @@
   height: 500px;
   position: relative;
 
+  div::after {
+    content: "";
+    background-image: url("../assets/Background-Contact-Form.jpg");
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.05;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
 
   form {
     height: inherit;
@@ -69,7 +84,7 @@
         border-bottom: 1px solid $input-color;
         color: $input-color;
         margin: 10px 0;
-        padding: 5px;
+        font-family: $base-font;
         background-color: transparent;
 
         &:focus {

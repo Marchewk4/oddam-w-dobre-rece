@@ -2,26 +2,17 @@
 
 .home-start {
   display: flex;
+  height: 100vh;
 
   .left-side {
-    position: relative;
     width: 40%;
-    margin-right: 65px;
-
-
-    .home-image {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      width: 130%;
-      height: 100%;
-      object-fit: cover;
-    }
+    background-image: url("../assets/Home-Hero-Image.jpg");
+    background-position: bottom right -100px;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .right-side {
-    //display: flex;
-    //justify-content: flex-end;
     width: 60%;
     height: inherit;
   }
