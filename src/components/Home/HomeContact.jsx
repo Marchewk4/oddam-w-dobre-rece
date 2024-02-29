@@ -3,7 +3,6 @@ import { addDoc, collection } from "firebase/firestore";
 import { firestore } from "../firebase.js";
 
 import Decoration from "../../assets/Decoration.svg";
-import BackgroundImage from "../../assets/Background-Contact-Form.jpg";
 
 import "../../scss/main.scss";
 import * as url from "url";
@@ -66,10 +65,6 @@ function HomeContact() {
         <section
             className="contact-form"
             name="contact"
-            style={{
-                background: `no-repeat top url(${BackgroundImage})`,
-                backgroundSize: "cover",
-            }}
         >
             <form onSubmit={handleSubmit}>
                 <h2>Skontaktuj się z nami</h2>
@@ -104,7 +99,7 @@ function HomeContact() {
                 <div className="contact-form__second">
                     <label>Wpisz swoją wiadomość</label>
                     <textarea
-                        rows="5"
+                        rows="4"
                         placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
                         value={message}
                         name="message"
