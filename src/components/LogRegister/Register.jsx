@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from 'react-router-dom';
 import { addDoc, collection } from "firebase/firestore";
 import { firestore } from "../firebase.js";
@@ -10,11 +11,11 @@ import Decoration from "../../assets/Decoration.svg";
 import "../../scss/main.scss";
 
 function Register() {
-    const [email, setEmail] = React.useState("");
-    const [password, setPassword] = React.useState("");
-    const [password2, setPassword2] = React.useState("");
-    const [errors, setErrors] = React.useState({});
-    const [register, setRegister] = React.useState(false);
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [password2, setPassword2] = useState("");
+    const [errors, setErrors] = useState({});
+    const [register, setRegister] = useState(false);
 
     const navigate = useNavigate();
 
