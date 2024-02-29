@@ -13,7 +13,7 @@ function Form() {
         <>
             <div className="form-start" name="formStart">
                 <div className="left-side">
-                    <img src={FormImage} alt="form-image" className="form-image"/>
+                    {/*<img src={FormImage} alt="form-image" className="form-image"/>*/}
                 </div>
                 <div className="right-side container">
                     <div className="header-nav-container">
